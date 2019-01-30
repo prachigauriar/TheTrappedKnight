@@ -1,6 +1,6 @@
 //
 //  Point+SpiralRing.swift
-//  TheTrappedKnight
+//  TrappedKnight
 //
 //  Created by Prachi Gauriar on 1/29/2019.
 //  Copyright © 2019 Prachi Gauriar. All rights reserved.
@@ -11,14 +11,14 @@ import Foundation
 
 extension Point {
     /// The spiral ring that the point is on.
-    var spiralRing: SpiralRing {
+    public var spiralRing: SpiralRing {
         let ringNumber = max(abs(x), abs(y))
         return SpiralRing(number: ringNumber)!
     }
     
     
     /// The position of the point in its spiral ring.
-    var spiralRingEdgePosition: SpiralRing.EdgePosition {
+    public var spiralRingEdgePosition: SpiralRing.EdgePosition {
         let ringNumber = spiralRing.number
         if x == ringNumber && y != -ringNumber {
             return SpiralRing.EdgePosition(edge: .right, offset: y + ringNumber - 1)
@@ -33,7 +33,7 @@ extension Point {
     
 
     /// The spiral number for the point.
-    var spiralNumber: Int {
+    public var spiralNumber: Int {
         let ring = spiralRing
         guard ring.number != 0 else {
             return 1

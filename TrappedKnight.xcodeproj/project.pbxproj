@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C99655121FFF83F006D5727 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C99655021FFF83F006D5727 /* main.swift */; };
+		4CFEC2AC2201071A0025969E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFEC2AB2201071A0025969E /* AppDelegate.swift */; };
+		4CFEC2AE2201071C0025969E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFEC2AD2201071C0025969E /* Assets.xcassets */; };
+		4CFEC2DB220125D90025969E /* KnightPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFEC2A32200C36A0025969E /* KnightPath.swift */; };
+		4CFEC2DC220125D90025969E /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C99655921FFF884006D5727 /* Point.swift */; };
+		4CFEC2DD220125D90025969E /* Point+KnightMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFEC2A12200C0B30025969E /* Point+KnightMovement.swift */; };
+		4CFEC2DE220125D90025969E /* Point+SpiralRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B91392200946C009B6E95 /* Point+SpiralRing.swift */; };
+		4CFEC2DF220125D90025969E /* SpiralRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C99655721FFF85B006D5727 /* SpiralRing.swift */; };
+		4CFEC2E0220125D90025969E /* KnightPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFEC2A32200C36A0025969E /* KnightPath.swift */; };
+		4CFEC2E1220125D90025969E /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C99655921FFF884006D5727 /* Point.swift */; };
+		4CFEC2E2220125D90025969E /* Point+KnightMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFEC2A12200C0B30025969E /* Point+KnightMovement.swift */; };
+		4CFEC2E3220125D90025969E /* Point+SpiralRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B91392200946C009B6E95 /* Point+SpiralRing.swift */; };
+		4CFEC2E4220125D90025969E /* SpiralRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C99655721FFF85B006D5727 /* SpiralRing.swift */; };
+		4CFEC2E8220126E70025969E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CFEC2E7220126E70025969E /* Main.storyboard */; };
+		4CFEC2EB2201277E0025969E /* TrappedKnightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFEC2EA2201277E0025969E /* TrappedKnightViewController.swift */; };
+		4CFEC2ED22012CBE0025969E /* TrappedKnightPlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFEC2EC22012CBE0025969E /* TrappedKnightPlotViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4C99654B21FFF83F006D5727 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		4CFEC2D22201236C0025969E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4C4B91392200946C009B6E95 /* Point+SpiralRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Point+SpiralRing.swift"; sourceTree = "<group>"; };
+		4C99654D21FFF83F006D5727 /* trapped_knight */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = trapped_knight; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C99655021FFF83F006D5727 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4C99655721FFF85B006D5727 /* SpiralRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiralRing.swift; sourceTree = "<group>"; };
+		4C99655921FFF884006D5727 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		4CFEC2A12200C0B30025969E /* Point+KnightMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Point+KnightMovement.swift"; sourceTree = "<group>"; };
+		4CFEC2A32200C36A0025969E /* KnightPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnightPath.swift; sourceTree = "<group>"; };
+		4CFEC2A92201071A0025969E /* Trapped Knight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trapped Knight.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CFEC2AB2201071A0025969E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4CFEC2AD2201071C0025969E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CFEC2B22201071C0025969E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CFEC2B32201071C0025969E /* Trapped_Knight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Trapped_Knight.entitlements; sourceTree = "<group>"; };
+		4CFEC2E7220126E70025969E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4CFEC2EA2201277E0025969E /* TrappedKnightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrappedKnightViewController.swift; sourceTree = "<group>"; };
+		4CFEC2EC22012CBE0025969E /* TrappedKnightPlotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrappedKnightPlotViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C99654A21FFF83F006D5727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CFEC2A62201071A0025969E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C99654421FFF83F006D5727 = {
+			isa = PBXGroup;
+			children = (
+				4CFEC2AA2201071A0025969E /* Trapped Knight */,
+				4C99654F21FFF83F006D5727 /* trapped_knight */,
+				4C99654E21FFF83F006D5727 /* Products */,
+				4CFEC2D8220123C20025969E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C99654E21FFF83F006D5727 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C99654D21FFF83F006D5727 /* trapped_knight */,
+				4CFEC2A92201071A0025969E /* Trapped Knight.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C99654F21FFF83F006D5727 /* trapped_knight */ = {
+			isa = PBXGroup;
+			children = (
+				4C99655021FFF83F006D5727 /* main.swift */,
+			);
+			path = trapped_knight;
+			sourceTree = "<group>";
+		};
+		4CFEC2AA2201071A0025969E /* Trapped Knight */ = {
+			isa = PBXGroup;
+			children = (
+				4CFEC2BE220108CD0025969E /* Application */,
+				4CFEC2DA220125C50025969E /* Model */,
+				4CFEC2E9220127640025969E /* Controller */,
+				4CFEC2C0220108FD0025969E /* Resources */,
+			);
+			path = "Trapped Knight";
+			sourceTree = "<group>";
+		};
+		4CFEC2BE220108CD0025969E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4CFEC2AB2201071A0025969E /* AppDelegate.swift */,
+				4CFEC2BF220108F40025969E /* Supporting Files */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4CFEC2BF220108F40025969E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CFEC2B22201071C0025969E /* Info.plist */,
+				4CFEC2B32201071C0025969E /* Trapped_Knight.entitlements */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CFEC2C0220108FD0025969E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4CFEC2AD2201071C0025969E /* Assets.xcassets */,
+				4CFEC2E7220126E70025969E /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4CFEC2D8220123C20025969E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CFEC2DA220125C50025969E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4CFEC2A32200C36A0025969E /* KnightPath.swift */,
+				4C99655921FFF884006D5727 /* Point.swift */,
+				4CFEC2A12200C0B30025969E /* Point+KnightMovement.swift */,
+				4C4B91392200946C009B6E95 /* Point+SpiralRing.swift */,
+				4C99655721FFF85B006D5727 /* SpiralRing.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4CFEC2E9220127640025969E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CFEC2EA2201277E0025969E /* TrappedKnightViewController.swift */,
+				4CFEC2EC22012CBE0025969E /* TrappedKnightPlotViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C99654C21FFF83F006D5727 /* trapped_knight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C99655421FFF83F006D5727 /* Build configuration list for PBXNativeTarget "trapped_knight" */;
+			buildPhases = (
+				4C99654921FFF83F006D5727 /* Sources */,
+				4C99654A21FFF83F006D5727 /* Frameworks */,
+				4C99654B21FFF83F006D5727 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = trapped_knight;
+			productName = TheTrappedKnight;
+			productReference = 4C99654D21FFF83F006D5727 /* trapped_knight */;
+			productType = "com.apple.product-type.tool";
+		};
+		4CFEC2A82201071A0025969E /* Trapped Knight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CFEC2B42201071C0025969E /* Build configuration list for PBXNativeTarget "Trapped Knight" */;
+			buildPhases = (
+				4CFEC2A52201071A0025969E /* Sources */,
+				4CFEC2A62201071A0025969E /* Frameworks */,
+				4CFEC2A72201071A0025969E /* Resources */,
+				4CFEC2D22201236C0025969E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Trapped Knight";
+			productName = "The Trapped Knight";
+			productReference = 4CFEC2A92201071A0025969E /* Trapped Knight.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C99654521FFF83F006D5727 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Prachi Gauriar";
+				TargetAttributes = {
+					4C99654C21FFF83F006D5727 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4CFEC2A82201071A0025969E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 4C99654821FFF83F006D5727 /* Build configuration list for PBXProject "TrappedKnight" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C99654421FFF83F006D5727;
+			productRefGroup = 4C99654E21FFF83F006D5727 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CFEC2A82201071A0025969E /* Trapped Knight */,
+				4C99654C21FFF83F006D5727 /* trapped_knight */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CFEC2A72201071A0025969E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CFEC2E8220126E70025969E /* Main.storyboard in Resources */,
+				4CFEC2AE2201071C0025969E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C99654921FFF83F006D5727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CFEC2E4220125D90025969E /* SpiralRing.swift in Sources */,
+				4C99655121FFF83F006D5727 /* main.swift in Sources */,
+				4CFEC2E0220125D90025969E /* KnightPath.swift in Sources */,
+				4CFEC2E3220125D90025969E /* Point+SpiralRing.swift in Sources */,
+				4CFEC2E2220125D90025969E /* Point+KnightMovement.swift in Sources */,
+				4CFEC2E1220125D90025969E /* Point.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CFEC2A52201071A0025969E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CFEC2DF220125D90025969E /* SpiralRing.swift in Sources */,
+				4CFEC2AC2201071A0025969E /* AppDelegate.swift in Sources */,
+				4CFEC2DB220125D90025969E /* KnightPath.swift in Sources */,
+				4CFEC2ED22012CBE0025969E /* TrappedKnightPlotViewController.swift in Sources */,
+				4CFEC2EB2201277E0025969E /* TrappedKnightViewController.swift in Sources */,
+				4CFEC2DE220125D90025969E /* Point+SpiralRing.swift in Sources */,
+				4CFEC2DD220125D90025969E /* Point+KnightMovement.swift in Sources */,
+				4CFEC2DC220125D90025969E /* Point.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4C99655221FFF83F006D5727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C99655321FFF83F006D5727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4C99655521FFF83F006D5727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 649X9A4LS8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		4C99655621FFF83F006D5727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 649X9A4LS8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		4CFEC2B52201071C0025969E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Trapped Knight/Application/Supporting Files/Trapped_Knight.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 649X9A4LS8;
+				INFOPLIST_FILE = "$(SRCROOT)/Trapped Knight/Application/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.quantumlenscap.TrappedKnight;
+				PRODUCT_MODULE_NAME = TrappedKnight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		4CFEC2B62201071C0025969E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Trapped Knight/Application/Supporting Files/Trapped_Knight.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 649X9A4LS8;
+				INFOPLIST_FILE = "$(SRCROOT)/Trapped Knight/Application/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.quantumlenscap.TrappedKnight;
+				PRODUCT_MODULE_NAME = TrappedKnight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C99654821FFF83F006D5727 /* Build configuration list for PBXProject "TrappedKnight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C99655221FFF83F006D5727 /* Debug */,
+				4C99655321FFF83F006D5727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C99655421FFF83F006D5727 /* Build configuration list for PBXNativeTarget "trapped_knight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C99655521FFF83F006D5727 /* Debug */,
+				4C99655621FFF83F006D5727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CFEC2B42201071C0025969E /* Build configuration list for PBXNativeTarget "Trapped Knight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CFEC2B52201071C0025969E /* Debug */,
+				4CFEC2B62201071C0025969E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C99654521FFF83F006D5727 /* Project object */;
+}

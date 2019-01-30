@@ -1,6 +1,6 @@
 //
 //  SpiralRing.swift
-//  TheTrappedKnight
+//  TrappedKnight
 //
 //  Created by Prachi Gauriar on 1/28/2019.
 //  Copyright © 2019 Prachi Gauriar. All rights reserved.
@@ -35,9 +35,9 @@ import Foundation
 ///
 /// The `SpiralRing` type provides useful values when working with spiral rings, including the ring’s width, minimum
 /// and maximum values, and edge length.
-struct SpiralRing {
+public struct SpiralRing {
     /// `Edge`s represent the side of a spiral ring that a point appears on.
-    enum Edge : Int, CustomStringConvertible {
+    public enum Edge : Int, CustomStringConvertible {
         /// The right edge. A point `P = (x, y)` is on the right edge of Ring *i* if `x = i` and `y ≠ -i`.
         case right
 
@@ -51,7 +51,7 @@ struct SpiralRing {
         case bottom
 
 
-        var description: String {
+        public var description: String {
             switch self {
             case .right:
                 return "right"
@@ -67,23 +67,23 @@ struct SpiralRing {
 
 
     /// `EdgePosition`s pair an edge with an integer offset. The offset is the distance from the edge’s minimum value.
-    struct EdgePosition {
+    public struct EdgePosition {
         /// The position’s edge.
-        let edge: Edge
+        public let edge: Edge
 
         /// The position’s offset. This value is between 0 and `ring.edgeLength - 1`.
-        let offset: Int
+        public let offset: Int
     }
 
 
     /// The ring’s number.
-    let number: Int
+    public let number: Int
 
 
     /// Creates a new spiral ring with the specified ring number. Returns `nil` when `number` is negative.
     ///
     /// - Parameter number: The number of the ring.
-    init?(number: Int) {
+    public init?(number: Int) {
         guard number >= 0 else {
             return nil
         }
@@ -93,33 +93,33 @@ struct SpiralRing {
 
 
     /// Returns the width of the ring. For Ring *i*, this is  `2i + 1`.
-    var width: Int {
+    public var width: Int {
         return 2 * number + 1
     }
 
 
     /// Returns the minimum value of the ring. For Ring *i*, this is  `(2i - 1)² + 1`, or one larger than Ring *i - 1*’s
     /// maximum value.
-    var minimumValue: Int {
+    public var minimumValue: Int {
         return SpiralRing(number: number - 1).map { $0.maximumValue + 1 } ?? 1
     }
 
 
     /// Returns the maximum value of the ring. For Ring *i*, this is `(2i + 1)²`.
-    var maximumValue: Int {
+    public var maximumValue: Int {
         return width * width
     }
 
 
     /// Returns the length of an edge in the ring. For Ring *i*, this is `2i`. See `SpiralRing.Edge` for more
     /// information about the definition of edges.
-    var edgeLength: Int {
+    public var edgeLength: Int {
         return 2 * number
     }
 
 
     /// The points for spiral ring organized in rows.
-    var pointLattice: [[Point]] {
+    public var containingPointLattice: [[Point]] {
         return (-number...number).reversed().map { (y) in
             (-number...number).map { (x) in
                 return Point(x: x, y: y)
